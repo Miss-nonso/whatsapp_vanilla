@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46b7dbe341.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="leftContainer">
+            <div class="leftTopContainer">
+                <div class="profilePhotoContainer" id="lefterHeadImage"><img src="Adichie1.jpg"
+                        alt="Your Profile picture"></div>
+                <div class="leftTopRightIconsContainer">
+                    <div class="groupIconContainer" onclick="handleAddChat(event)"><i class="fa-solid fa-users fa-lg"
+                            style="color: #aebac1;"></i>
+                    </div>
+                    <div class="circleIconContainer"><i class="fa-solid fa-circle-notch fa-lg"
+                            style="color: #aebac1;"></i></div>
+                    <div class="messageIconContainer"><i class="fa-solid fa-message fa-lg" style="color: #aebac1;"></i>
+                    </div>
+                    <div class="threeDotsContainer"><i class="fa-solid fa-ellipsis-vertical fa-lg"
+                            style="color: #aebac1;"></i></div>
+                </div>
+            </div>
+            <div class="searchAndFilterContainer">
+                <input type="text" placeholder="Search or start new chats" class="searchInput">
+                <div class="filterContainer"><i class="fa-solid fa-arrow-down-wide-short fa-lg"
+                        style="color: #aebac1;"></i></div>
+            </div>
+            <div class="leftBodyContainer">
+
+                <div class="listOfContactsContainer">
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert1ed.png" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Mary Josh </div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">Just now</div>
+                                <div class="counter">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert2ed.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Ada Melanin</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">09:39</div>
+                                <div class="counter">7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie23.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Youvve Mba</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">Yesterday</div>
+                                <div class="counter">5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie1.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Obinwanne</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">26/6/23</div>
+                                <div class="counter">4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie23.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Houston Chima</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">24/6/23</div>
+                                <div class="counter">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert2ed.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Chief</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">10/6/23</div>
+                                <div class="counter">2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie1.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Egbon Saheed</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">3/6/23</div>
+                                <div class="counter">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie23.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Presh Mezie</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">26/5/23</div>
+                                <div class="counter">4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert2ed.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">+234 702 344 5521</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">17/5/23</div>
+                                <div class="counter">3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert1ed.png" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Dele Momodu</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">27/4/23</div>
+                                <div class="counter">5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert2ed.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">+234 804 971 6619</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">13/4/23</div>
+                                <div class="counter">4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie1.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">+233 807 553 9900</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">26/3/23</div>
+                                <div class="counter">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert1ed.png" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Lucky Joe</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">2/3/23</div>
+                                <div class="counter">5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie23.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Noah Reiley</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">14/2/23</div>
+                                <div class="counter">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert2ed.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Ebube Joy</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">1/1/23</div>
+                                <div class="counter">3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie1.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Ibe Paul</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">1/1/23</div>
+                                <div class="counter">3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert2ed.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">+44 212 091 2263</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">31/12/22</div>
+                                <div class="counter">2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="Adichie23.jpg" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">Adichie Ngozi</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">14/7/22</div>
+                                <div class="counter">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <div class="profilePhotoContainer"><img src="advert1ed.png" alt="User's Profile picture"></div>
+                        <div class="numAndTime">
+                            <div class="userNumberAndTexts">
+                                <div class="userNumber">+233 708 884 6432</div>
+                                <div class="userTexts"><small>Hey! I'm using Whatsapp</small></div>
+                            </div>
+                            <div class="timeAndCounter">
+                                <div class="time">9/2/22</div>
+                                <div class="counter">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="encyptContainer">
+                        <i class="fa-solid fa-lock fa-sm" style="color: #ffffff;"></i> Your personal messages are <a
+                            href="#"> end-to-end encrypted</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div class="rightTopContainer">
+                <div class="rightTopLeftContainer">
+                    <div class="profilePhotoContainer" id="leftHeadImage"><img src="advert1ed.png"
+                            alt="User Profile Photo"></div>
+                    <div class="userNumberOrName">
+                        <p>Bro Bernard</p>
+                    </div>
+                </div>
+                <div class="rightTopRightContainer">
+                    <div class="searchIconContainer"><i class="fa-solid fa-magnifying-glass fa-lg"
+                            style="color: #aebac1;"></i></div>
+                    <div class="rightThreeDotsIcon"><i class="fa-solid fa-ellipsis-vertical fa-lg"
+                            style="color: #aebac1;"></i></div>
+                </div>
+            </div>
+            <div class="rightBodyContainer">
+                <div class="timeOfChatContainer">
+                    <div class="timeOfChat">5/5/2022</div>
+                </div>
+                <div class="firstEncyptContainer">
+                    <i class="fa-solid fa-lock fa-sm" style="color: #ffd279;"></i> Messages are end-end encrypted. No
+                    one outside this
+                    chat, not even Whatsapp, can read or listen to them. Click to learn more.
+                </div>
+                <div class="timeOfChatContainer">
+                    <div class="timeOfChat">12/3/2022</div>
+                </div>
+                <!-- Reply -->
+                <div class="wideChatContainer replyContainer">
+                    <div class="chatBox reply">
+                        <div class="repliedChatContainer">Hey. <br> Let's talk about an amazing creature</div>
+                        <div class="timeOfReply"><small>21:56</small>
+                            <div class="blueTick"><i class="fa-solid fa-check-double fa-sm" style="color: #3ca3c0;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reply -->
+                <div class="wideChatContainer replyContainer">
+                    <div class=" chatBox reply">
+                        <div class=" repliedChatContainer">All creatures are amazing right...Tell me something
+                            interesting you know about women</div>
+                        <div class="timeOfReply"><small>21:56</small>
+                            <div class="blueTick"><i class="fa-solid fa-check-double fa-sm" style="color: #3ca3c0;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied -->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="repliedChatContainer">Lol sure. Let's do this. </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied-->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="repliedChatContainer">An emotional creature, cries when she's
+                            happy
+                            and cries when she's scared.</div>
+                        <div class="timeOfReply"><small>21:56</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reply -->
+                <div class="wideChatContainer replyContainer">
+                    <div class="chatBox reply">
+                        <div class="justReplies">
+                            <div class="repliedChatContainer">
+                                <div class="referText">
+                                    <p>
+                                        <b>Bro Bernard</b> <br>She sings when she feels like crying, cries when she's
+                                        happy
+                                        and laughs when she's scared
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="userReply">
+                                <p> Why did you have to start with the tears?<br>It's
+                                    funny how women are always identified with weakness</p>
+                            </div>
+                        </div>
+                        <div class="timeOfReply timeOfReplyex"><small>21:56</small>
+                            <div class="blueTick"><i class="fa-solid fa-check-double fa-sm" style="color: #3ca3c0;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied -->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="justReplies">
+                            <div class="repliedChatContainer">
+                                <p class="referText repliedReferText">
+                                    <b>You</b> <br> Why did you have to start with the tears?<br>It's
+                                    funny how women are always identified with weakness
+                                </p>
+                            </div>
+                            <div class="userReply">
+                                <p>Yea right but her strength is contradictingly suprising</p>
+                            </div>
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reply -->
+                <div class="wideChatContainer replyContainer">
+                    <div class="chatBox reply">
+                        <div class="justReplies">
+                            <div class="repliedChatContainer">
+                                <p class="referText">
+                                    <b>Bro Bernard</b> <br>Yea right but her strength is contradictingly suprising
+                                </p>
+                            </div>
+                            <div class="userReply">
+                                <p>You can say that again</p>
+                            </div>
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                            <div class="blueTick"> <i class="fa-solid fa-check-double fa-sm"
+                                    style="color: #3ca3c0;"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied -->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="repliedChatContainer">She has the power to amaze a man. She can handle troubles
+                            and
+                            carry heavy loads.</div>
+                        <div class="timeOfReply"><small>21:56</small>
+                            <div class="blueTick"><i class="fa-solid fa-check-double fa-sm" style="color: #3ca3c0;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied -->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="justReplies">
+                            <div class="repliedChatContainer ">
+                                <p class="referText repliedReferText"> <b>You</b> <br>She fights for what she believes
+                                    in and when she
+                                    does, She must do it all with just two hands and a passionate heart.</p>
+
+                            </div>
+                            <div class="userReply">
+                                <p>Being a woman is invaluable</p>
+                            </div>
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied -->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="repliedChatContainer"> She literarilly heals herself when
+                            she is sick and can work 18 hours a day if that is what is required to maintain
+                            relevance
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reply -->
+                <div class="wideChatContainer replyContainer">
+                    <div class="chatBox reply">
+                        <div class="repliedChatContainer">Hmm... keep them coming. I'm loving this
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                            <div class="blueTick"><i class="fa-solid fa-check-double fa-sm" style="color: #3ca3c0;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied -->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="repliedChatContainer"> She literarilly heals herself when
+                            she is sick and can work 18 hours a day if that is what is required to maintain
+                            relevance
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied -->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="repliedChatContainer"> She can handle troubles and carry heavy loads.
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replied -->
+                <div class="wideChatContainer repliedContainer">
+                    <div class="chatBox replied">
+                        <div class="repliedChatContainer"> I wanna go on but my battery is about to die on me.
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reply -->
+                <div class="wideChatContainer replyContainer">
+                    <div class="chatBox reply">
+                        <div class="repliedChatContainer">Alright. Thanks... <br>You just made day
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                            <div class="blueTick"><i class="fa-solid fa-check-double fa-sm" style="color: #3ca3c0;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeOfChatContainer">
+                    <div class="timeOfChat">Yesterday</div>
+                </div>
+
+
+                <div class="wideChatContainer replyContainer">
+                    <div class="chatBox reply" id="lastChat">
+                        <div class="repliedChatContainer">Good morning to you fineeeeey <br>Are you up?
+                        </div>
+                        <div class="timeOfReply"><small>21:56</small>
+                            <div class="blueTick"><i class="fa-solid fa-check-double fa-sm" style="color: #3ca3c0;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bottomRightContainer">
+                <div class="emojiAndPin">
+                    <div class="emojiContainer"><i class="fa-regular fa-face-laugh fa-lg" style="color: #aebac1;"></i>
+                    </div>
+                    <div class="pinContainer"><i class="fa-solid fa-paperclip fa-rotate-180 fa-lg"
+                            style="color: #aebac1;" id="bernerdMsg"></i></div>
+                </div>
+                <input type="text" placeholder="Type a message" id="typedMsg">
+                <div class="voicenoteContainer"><i class="fa-solid fa-microphone fa-lg" style="color: #aebac1;"
+                        id="sendMsg"></i>
+                </div>
+            </div>
+            <a href="#" id="chatNavigator">
+                <div class="navigatiorContainer"><i class="fa-solid fa-angle-down fa-lg" style="color: #aebac1;"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
